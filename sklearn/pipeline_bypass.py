@@ -1,6 +1,6 @@
 import numpy as np
-from sklearn.pipeline import Pipeline
-from sklearn.metrics import make_scorer
+from .pipeline import Pipeline
+from .metrics import make_scorer
 
 def make_bypass_scorer(score_func, filt_func=None, greater_is_better=True, needs_proba=False,
                        needs_threshold=False, **kwargs):
